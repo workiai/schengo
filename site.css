@@ -67,6 +67,15 @@ html[data-lang="pt"] [data-set="pt"], html[data-lang="de"] [data-set="de"] { bac
 .phone { margin: 0; border-radius: 15% / 7.8%; overflow: hidden; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .6), 0 0 0 1px rgba(255, 255, 255, .08); transform: rotate(2deg); }
 .mrz { max-width: 1080px; margin: 0 auto; padding: 0 16px 18px; font: 500 12px/1 var(--mono); letter-spacing: .12em; color: rgba(255, 255, 255, .28); white-space: nowrap; overflow: hidden; }
 
+/* Schengo, the passport mascot, in a paper medallion on the navy band. */
+.title-row { display: flex; align-items: flex-end; gap: 14px; }
+.title-row h1 { flex: 1; min-width: 0; }
+.medallion { flex: none; width: 104px; height: 104px; border-radius: 50%; position: relative; }
+.medallion::before { content: ""; position: absolute; inset: 8px; border-radius: 50%; background: #F6F4EF; box-shadow: inset 0 0 0 2px var(--gold), 0 14px 28px -12px rgba(0, 0, 0, .55); }
+.mascot { position: relative; width: 104px; height: auto; animation: float 2.6s ease-in-out infinite; transform-origin: 50% 100%; }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(-1.2deg); } 50% { transform: translateY(-3px) rotate(1.2deg); } }
+@media (prefers-reduced-motion: reduce) { .mascot { animation: none; } }
+
 /* Content column. */
 .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 16px 0; }
 .features > div, .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
