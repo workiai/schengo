@@ -1,5 +1,5 @@
 # Schengo
 
-Pages publiques de l'app iPhone Schengo : politique de confidentialité et assistance, exigées par l'App Store.
+Site public de l'app iPhone Schengo : accueil, politique de confidentialité et assistance, en 5 langues. App Store Connect renvoie vers `privacy.html` et `support.html`.
 
-Source : `schengen-app/AppStore/` du dépôt de l'app. Modifier là-bas, puis recopier ici.
+Ne pas modifier ici : les pages sont générées par `schengen-app/AppStore/site/build.py` dans le dépôt de l'app, puis recopiées.

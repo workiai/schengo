@@ -3,20 +3,113 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Schengo</title>
-<style>
-  :root { color-scheme: light dark; }
-  body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 28px; margin: 0 0 8px; }
-  h2 { font-size: 20px; margin: 40px 0 8px; border-top: 1px solid #8884; padding-top: 24px; }
-  nav a { margin-right: 12px; }
-  .muted { opacity: .7; font-size: 14px; }
-</style>
+<title>Schengo · Schengen 90/180</title>
+<meta name="description" content="Schengo : calculateur Schengen 90/180 et jours de résidence fiscale pour iPhone. Schengen 90/180 calculator for iPhone.">
+<link rel="icon" href="img/icon-128.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>try{var s=localStorage.getItem("lang");var n=(navigator.language||"fr").slice(0,2);var l=["fr","en","es","pt","de"].indexOf(s)>=0?s:(["fr","en","es","pt","de"].indexOf(n)>=0?n:"en");document.documentElement.dataset.lang=l;document.documentElement.lang=l}catch(_){}</script>
 </head>
-<body>
-<h1>Schengo</h1>
-<p>Calculateur Schengen 90/180 et jours de résidence fiscale, pour iPhone.<br>Schengen 90/180 calculator and tax-residency day counter, for iPhone.</p>
-<p><a href="support.html">Assistance / Support</a> · <a href="privacy.html">Confidentialité / Privacy</a></p>
-<p class="muted">Contact : abdelchersf@gmail.com</p>
+<body class="home">
+<header class="bar">
+  <a class="brand" href="./"><img class="seal" src="img/icon-128.png" width="30" height="30" alt="">Schengo</a>
+  <nav class="links"><a href="support.html"><span data-l="fr" lang="fr">Assistance</span><span data-l="en" lang="en">Support</span><span data-l="es" lang="es">Soporte</span><span data-l="pt" lang="pt">Suporte</span><span data-l="de" lang="de">Hilfe</span></a><a href="privacy.html"><span data-l="fr" lang="fr">Confidentialité</span><span data-l="en" lang="en">Privacy</span><span data-l="es" lang="es">Privacidad</span><span data-l="pt" lang="pt">Privacidade</span><span data-l="de" lang="de">Datenschutz</span></a></nav>
+  <div class="langs" role="group" aria-label="Language"><button type="button" data-set="fr">FR</button><button type="button" data-set="en">EN</button><button type="button" data-set="es">ES</button><button type="button" data-set="pt">PT</button><button type="button" data-set="de">DE</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text"><div data-l="fr" lang="fr"><p class="eyebrow">Calculateur Schengen 90/180 pour iPhone</p>
+<h1>Est-ce que mon voyage passe ?</h1>
+<p class="lede">Schengo compte tes jours dans l&#x27;espace Schengen et te dit, avant de réserver, si ton voyage tient dans les 90 jours sur 180.</p>
+<p class="soon"><span class="apple" aria-hidden="true"></span>Bientôt sur l&#x27;App Store</p></div>
+<div data-l="en" lang="en"><p class="eyebrow">Schengen 90/180 calculator for iPhone</p>
+<h1>Does my trip fit?</h1>
+<p class="lede">Schengo counts your days in the Schengen Area and tells you, before you book, whether your trip fits the 90/180-day rule.</p>
+<p class="soon"><span class="apple" aria-hidden="true"></span>Coming soon to the App Store</p></div>
+<div data-l="es" lang="es"><p class="eyebrow">Calculadora Schengen 90/180 para iPhone</p>
+<h1>¿Cabe mi viaje?</h1>
+<p class="lede">Schengo cuenta tus días en el espacio Schengen y te dice, antes de reservar, si tu viaje cabe en los 90 días de cada 180.</p>
+<p class="soon"><span class="apple" aria-hidden="true"></span>Muy pronto en el App Store</p></div>
+<div data-l="pt" lang="pt"><p class="eyebrow">Calculadora Schengen 90/180 para iPhone</p>
+<h1>Minha viagem cabe?</h1>
+<p class="lede">O Schengo conta seus dias no Espaço Schengen e diz, antes de reservar, se sua viagem cabe nos 90 dias a cada 180.</p>
+<p class="soon"><span class="apple" aria-hidden="true"></span>Em breve na App Store</p></div>
+<div data-l="de" lang="de"><p class="eyebrow">Schengen-Rechner 90/180 für das iPhone</p>
+<h1>Passt meine Reise?</h1>
+<p class="lede">Schengo zählt deine Tage im Schengen-Raum und sagt dir vor der Buchung, ob deine Reise in die 90 Tage pro 180 passt.</p>
+<p class="soon"><span class="apple" aria-hidden="true"></span>Bald im App Store</p></div></div>
+    <div class="hero-visual"><div data-l="fr" lang="fr"><figure class="phone"><img src="img/fr-plan.jpg" width="520" height="993" alt=""></figure></div>
+<div data-l="en" lang="en"><figure class="phone"><img src="img/en-plan.jpg" width="520" height="993" alt=""></figure></div>
+<div data-l="es" lang="es"><figure class="phone"><img src="img/es-plan.jpg" width="520" height="993" alt=""></figure></div>
+<div data-l="pt" lang="pt"><figure class="phone"><img src="img/pt-plan.jpg" width="520" height="993" alt=""></figure></div>
+<div data-l="de" lang="de"><figure class="phone"><img src="img/de-plan.jpg" width="520" height="993" alt=""></figure></div></div>
+  </div>
+  <p class="mrz" aria-hidden="true">P&lt;SCHENGO&lt;&lt;90&lt;180&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</p>
+</section>
+<section class="wrap"><div data-l="fr" lang="fr"><div class="features"><article class="feature">
+  <div class="shot"><img src="img/fr-today.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>90 jours sur 180, comptés pour toi</h2><p>Jours restants, sortie au plus tard, jours libérés.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/fr-alerts.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Alertes avant la limite</h2><p>Et un widget toujours à jour.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/fr-history.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Tes voyages retrouvés dans tes photos</h2><p>Puis notés chaque jour, automatiquement.</p>
+</article></div><ul class="ticket"><li><b>Résidence fiscale</b><span>183 jours, règles du Royaume-Uni et des États-Unis.</span></li><li><b>Titres de séjour</b><span>Photographie ta carte ou ton visa D : les dates se remplissent.</span></li><li><b>Preuves</b><span>Relevé PDF et tableau CSV jour par jour.</span></li></ul></div>
+<div data-l="en" lang="en"><div class="features"><article class="feature">
+  <div class="shot"><img src="img/en-today.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Your 90/180 days, counted for you</h2><p>Days left, latest exit, days freed up.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/en-alerts.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Alerts before the limit</h2><p>Plus a widget that&#x27;s always up to date.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/en-history.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Past trips found in your photos</h2><p>Then logged every day, automatically.</p>
+</article></div><ul class="ticket"><li><b>Tax residency</b><span>183 days, UK and US tests.</span></li><li><b>Residence permits</b><span>Photograph your card or D visa and the dates fill themselves in.</span></li><li><b>Proof</b><span>PDF report and day-by-day CSV.</span></li></ul></div>
+<div data-l="es" lang="es"><div class="features"><article class="feature">
+  <div class="shot"><img src="img/es-today.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Tus 90/180 días, contados por ti</h2><p>Días restantes, salida más tardía, días liberados.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/es-alerts.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Avisos antes del límite</h2><p>Y un widget siempre al día.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/es-history.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Tus viajes, recuperados de tus fotos</h2><p>Y anotados cada día, automáticamente.</p>
+</article></div><ul class="ticket"><li><b>Residencia fiscal</b><span>183 días, reglas del Reino Unido y EE. UU.</span></li><li><b>Permisos de residencia</b><span>Fotografía tu tarjeta o visado D y las fechas se rellenan solas.</span></li><li><b>Pruebas</b><span>Informe PDF y CSV día a día.</span></li></ul></div>
+<div data-l="pt" lang="pt"><div class="features"><article class="feature">
+  <div class="shot"><img src="img/pt-today.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Seus 90/180 dias, contados por você</h2><p>Dias restantes, saída mais tardia, dias liberados.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/pt-alerts.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Alertas antes do limite</h2><p>E um widget sempre atualizado.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/pt-history.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Suas viagens, encontradas nas fotos</h2><p>E registradas todo dia, automaticamente.</p>
+</article></div><ul class="ticket"><li><b>Residência fiscal</b><span>183 dias, regras do Reino Unido e dos EUA.</span></li><li><b>Autorizações de residência</b><span>Fotografe seu cartão ou visto D e as datas se preenchem sozinhas.</span></li><li><b>Comprovantes</b><span>Relatório PDF e CSV dia a dia.</span></li></ul></div>
+<div data-l="de" lang="de"><div class="features"><article class="feature">
+  <div class="shot"><img src="img/de-today.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Deine 90/180 Tage, für dich gezählt</h2><p>Resttage, späteste Ausreise, frei werdende Tage.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/de-alerts.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Warnungen vor der Grenze</h2><p>Und ein Widget, immer aktuell.</p>
+</article><article class="feature">
+  <div class="shot"><img src="img/de-history.jpg" width="520" height="993" alt="" loading="lazy"></div>
+  <h2>Frühere Reisen aus deinen Fotos</h2><p>Danach jeden Tag automatisch erfasst.</p>
+</article></div><ul class="ticket"><li><b>Steuerwohnsitz</b><span>183 Tage, UK- und US-Regeln.</span></li><li><b>Aufenthaltstitel</b><span>Fotografiere deine Karte oder dein D-Visum, die Daten füllen sich selbst aus.</span></li><li><b>Nachweise</b><span>PDF-Bericht und CSV Tag für Tag.</span></li></ul></div></section>
+<section class="wrap promise"><div data-l="fr" lang="fr"><h2>Tes jours restent sur ton iPhone</h2><p>Pas de compte, pas de serveur, pas de publicité. Le pays du jour est calculé sur le téléphone ; ta position n&#x27;est ni gardée ni envoyée.</p><p><a href="privacy.html">Lire la politique de confidentialité →</a></p></div>
+<div data-l="en" lang="en"><h2>Your days stay on your iPhone</h2><p>No account, no server, no ads. Today&#x27;s country is worked out on the phone; your position is never kept or sent.</p><p><a href="privacy.html">Read the privacy policy →</a></p></div>
+<div data-l="es" lang="es"><h2>Tus días se quedan en tu iPhone</h2><p>Sin cuenta, sin servidor, sin publicidad. El país del día se calcula en el teléfono; tu posición nunca se guarda ni se envía.</p><p><a href="privacy.html">Leer la política de privacidad →</a></p></div>
+<div data-l="pt" lang="pt"><h2>Seus dias ficam no seu iPhone</h2><p>Sem conta, sem servidor, sem anúncios. O país do dia é calculado no celular; sua posição nunca é guardada nem enviada.</p><p><a href="privacy.html">Ler a política de privacidade →</a></p></div>
+<div data-l="de" lang="de"><h2>Deine Tage bleiben auf deinem iPhone</h2><p>Kein Konto, kein Server, keine Werbung. Das Land des Tages wird auf dem Telefon bestimmt; dein Standort wird nie gespeichert oder gesendet.</p><p><a href="privacy.html">Datenschutzerklärung lesen →</a></p></div></section>
+</main>
+<footer class="foot">
+  <p><a href="support.html"><span data-l="fr" lang="fr">Assistance</span><span data-l="en" lang="en">Support</span><span data-l="es" lang="es">Soporte</span><span data-l="pt" lang="pt">Suporte</span><span data-l="de" lang="de">Hilfe</span></a> · <a href="privacy.html"><span data-l="fr" lang="fr">Confidentialité</span><span data-l="en" lang="en">Privacy</span><span data-l="es" lang="es">Privacidad</span><span data-l="pt" lang="pt">Privacidade</span><span data-l="de" lang="de">Datenschutz</span></a> · <a href="mailto:abdelchersf@gmail.com">abdelchersf@gmail.com</a></p>
+  <p class="fine"><span data-l="fr" lang="fr">Calcul indicatif, selon le règlement (UE) 2016/399. Il ne remplace ni les registres officiels (EES) ni un conseiller fiscal.</span><span data-l="en" lang="en">An estimate based on Regulation (EU) 2016/399. It does not replace official records (EES) or a tax adviser.</span><span data-l="es" lang="es">Cálculo orientativo según el Reglamento (UE) 2016/399. No sustituye los registros oficiales (EES) ni a un asesor fiscal.</span><span data-l="pt" lang="pt">Cálculo indicativo, segundo o Regulamento (UE) 2016/399. Não substitui os registros oficiais (EES) nem um consultor fiscal.</span><span data-l="de" lang="de">Eine Schätzung nach Verordnung (EU) 2016/399. Sie ersetzt weder amtliche Register (EES) noch eine Steuerberatung.</span></p>
+  <p class="fine">© 2026 Schengo</p>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>
